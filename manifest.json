@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "Test extension",
+    "author": "Geo1088",
+    "short_name": "testext",
+    "description": "dab dab dab",
+    "version": "0",
+    "version_name": "0: the first one",
+    "applications": {
+        "gecko": {
+            "id": "testext@geosthings",
+            "strict_min_version": "57.0"
+        }
+    },
+    "icons": {
+        "16": "icon/16.png",
+        "48": "icon/48.png",
+        "128": "icon/128.png"
+    },
+    "permissions": [
+        "https://*.google.com/*"
+    ],
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "all_frames": true,
+            "matches": [
+                "https://*.google.com/*"
+            ],
+            "js": [
+                // External libraries
+                "lib/webextension-polyfill@0.6.0/dist/browser-polyfill.min.js",
+                // Extension entrypoint
+                "esm-bootstrap.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        // ES6 module scripts
+        "src/modules/bagel.js",
+        "src/index.js",
+        "src/storage.js",
+        "src/tbmodule.js",
+        // Other resources
+        "images/everything.png",
+        "images/onion.png",
+        "images/plain.png",
+        "images/poppy.png",
+        "images/sesame.png"
+    ]
+}
