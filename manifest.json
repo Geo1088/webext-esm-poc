@@ -28,20 +28,11 @@
                 "*://*.example.com/*"
             ],
             "js": [
-                // External libraries
-                "lib/webextension-polyfill@0.6.0/dist/browser-polyfill.min.js",
-                // Extension entrypoint
-                "esm-bootstrap.js"
+                "src/index.js"
             ]
         }
     ],
     "web_accessible_resources": [
-        // ES6 module scripts
-        "src/modules/bagel.js",
-        "src/index.js",
-        "src/storage.js",
-        "src/tbmodule.js",
-        // Other resources
         "images/everything.png",
         "images/onion.png",
         "images/plain.png",

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "exby manifest.json --dir build --zip build.zip --cjs-exclude 'node_modules/webextension-polyfill/**/*'"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.7.0"
+  },
+  "devDependencies": {
+    "exby": "git+https://github.com/Geo1088/exby.git"
+  }
+}

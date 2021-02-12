@@ -1,4 +1,4 @@
-// import '../lib/webextension-polyfill@0.6.0/dist/browser-polyfill.js';
+import 'webextension-polyfill';
 
 import {getKey} from './storage.js';
 
