@@ -18,14 +18,14 @@
         "128": "icon/128.png"
     },
     "permissions": [
-        "https://*.google.com/*"
+        "*://*.example.com/*"
     ],
     "content_scripts": [
         {
-            "run_at": "document_start",
+            "run_at": "document_end",
             "all_frames": true,
             "matches": [
-                "https://*.google.com/*"
+                "*://*.example.com/*"
             ],
             "js": [
                 // External libraries
