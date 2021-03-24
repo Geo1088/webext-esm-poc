@@ -1,4 +1,4 @@
-// import '../lib/webextension-polyfill@0.6.0/dist/browser-polyfill.js';
+import '../lib/webextension-polyfill@0.6.0/dist/browser-polyfill.min.js';
 
 import {getKey} from './storage.js';
 
@@ -7,11 +7,6 @@ import Bagel from './modules/bagel.js';
 const allModules = [
     Bagel,
 ]
-
-try {
-    console.log(chrome, chrome.runtime.id);
-    console.log(browser);
-} catch {}
 
 /**
  * Returns whether the given module is enabled.

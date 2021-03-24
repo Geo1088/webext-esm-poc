@@ -1,14 +1,14 @@
 {
     "manifest_version": 2,
     "name": "Test extension",
-    "author": "Geo1088",
+    "author": "eritbh",
     "short_name": "testext",
     "description": "dab dab dab",
     "version": "0",
     "version_name": "0: the first one",
     "applications": {
         "gecko": {
-            "id": "testext@geosthings",
+            "id": "testext@erinsthings",
             "strict_min_version": "57.0"
         }
     },
@@ -36,6 +36,8 @@
         }
     ],
     "web_accessible_resources": [
+        // External libraries imported by ES6 module scripts
+        "lib/webextension-polyfill@0.6.0/dist/browser-polyfill.min.js",
         // ES6 module scripts
         "src/modules/bagel.js",
         "src/index.js",

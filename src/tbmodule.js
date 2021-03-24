@@ -12,7 +12,7 @@ export default class TbModule {
      * @param {boolean} options.beta If true, the module is only enabled in beta mode
      * @param {boolean} options.dev If true, the module is only enabled in dev mode
      * @param {object} options.settings Settings stuffs
-     * @param {Function} [initFunction] Run when the page loads while the module is enabled, the module is passed as `this` and an object mapping setting names to calues is the first argument
+     * @param {Function} [initFunction] Run when the page loads while the module is enabled, the module is passed as `this` and an object mapping setting names to values is the first argument
      */
     constructor ({
         name,
